@@ -47,9 +47,9 @@ There are many ways to implement the algorithm. Here are two for you to choose:
 
 ### Recursive
 Believe it or not this is very easy to implement. Use a recursive function to move the discs. Let `n` be the total numbe of discs and `A, B & C` represent the rod:
-1. Move n−1 discs from A to B. This leaves disc n alone on A.
-1. Move disc n from A to C.
-1. Move n−1 discs from B to C so they sit on disc n.
+  1. Move n−1 discs from A to B. This leaves disc n alone on A.
+  1. Move disc n from A to C.
+  1. Move n−1 discs from B to C so they sit on disc n.
 
 ### Iterative
 You can use typical loop to implement the game as well but, be warned, this is more difficult to write. Here is how to do it:
@@ -74,6 +74,6 @@ You can use typical loop to implement the game as well but, be warned, this is m
 ### Others
 The [Wikipedia](https://en.wikipedia.org/wiki/Tower_of_Hanoi) page has listed other algoritms. If you want more challenges, try to implement any of them.
 
-### Hints
+## Hints
   - The optimal solution always has 2<sup>n</sup> - 1 moves.
   - **THINK** about how would you remove a disc from a rod and how would you put a disc on to a rod.
