@@ -42,6 +42,9 @@ Here is another example showing how the Rod arrays can represent the disc format
   "-----------------"
 ```
 
+### Number of steps
+The `printTowers` function will print the number of steps used. **You should update** the `steps` variable accordingly so that the number of steps used can be tracked.
+
 ## The Algorithm
 There are many ways to implement the algorithm. Here are two for you to choose:
 
