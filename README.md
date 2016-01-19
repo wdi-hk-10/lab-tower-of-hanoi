@@ -5,9 +5,9 @@
 The Tower of Hanoi is a mathamatical game/puzzle. It consists of three rods and a number of discs of different sizes which can be slide on to any rod. You can find some pretty nice illustrations at [Wikipedia](https://en.wikipedia.org/wiki/Tower_of_Hanoi).
 
 The game starts with all discs stacking in asecnding order on the left rod. The objective of the game is to move all discs from the left rod to the right rod by obeying these rules:
-1. You can only move one disc at a time.
-1. You can only move the uppermost disc from a stack and place it on the top of another stack.
-1. You cannot place a disc on top of a smaller disc.
+  1. You can only move one disc at a time.
+  1. You can only move the uppermost disc from a stack and place it on the top of another stack.
+  1. You cannot place a disc on top of a smaller disc.
 
 ## The Code
 Please fork this repo and clone it to your local. You can find `hanoi.js` in the `start-code` folder. You can copy and paste the start code to [repl.it](http://repl.it), [jsbin](https://jsbin.com/?js,console) or the Chrome JS console, then run `towerOfHanoi(4)`. Then you should see something like below:
