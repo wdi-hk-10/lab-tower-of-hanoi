@@ -50,7 +50,7 @@ There are many ways to implement the algorithm. Here are two for you to choose:
 
 ### Recursive
 Believe it or not this is very easy to implement. Use a recursive function to move the discs. Your goal is to move all discs from the starting rod to the final rod. 
-  1. Move height-1 discs from the starting rod to the immediate rod using final rod as buffer.
+  1. Move height-1 discs from the starting rod to the intermediate rod using final rod as buffer.
   1. Move the remaining disc from the starting rod to the final rod.
   1. Move height-1 discs from the intermediate rod to the final rod using the original rod as buffer.
 
