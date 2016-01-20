@@ -24,11 +24,11 @@ Hanoi.prototype.moveOneDisc = function(source, dest) {
   this.printTowers();
 };
   
-Hanoi.prototype.moveDiscs = function(source, immediate, dest, discsToBeMoved) {
+Hanoi.prototype.moveDiscs = function(source, intermediate, dest, discsToBeMoved) {
   if (discsToBeMoved >= 1) {
-    this.moveDiscs(source, dest, immediate, discsToBeMoved-1);
+    this.moveDiscs(source, dest, intermediate, discsToBeMoved-1);
     this.moveOneDisc(source, dest);
-    this.moveDiscs(immediate, source, dest, discsToBeMoved-1);
+    this.moveDiscs(intermediate, source, dest, discsToBeMoved-1);
   }
 };
   
