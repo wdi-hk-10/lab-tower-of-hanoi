@@ -66,12 +66,23 @@ function towerOfHanoi(discs) {
   } else {
     moveOdd();
   }
+
+  reset();
 }
 
 function initialSetUp() {
   for (var i=1; i<=numberOfDiscs; i++){
     pegA.push(i);
   }
+}
+
+function reset() {
+  pegA = [];
+  pegB = [];
+  pegC = [];
+  
+  numberOfDiscs = 0;
+  steps = 0;
 }
 
 function printTowers() {
