@@ -25,8 +25,17 @@ function towerOfHanoi(discs) {
   // DO NOT modify the 3 lines above
 
   // YOUR CODE HERE
- 
-  // DO NOT remove the line below 
+  function hanoiCode(numberOfDiscs, start, end, intm) {
+    if (numberOfDiscs==0) {
+      end.unshift(start.shift());
+    } else {
+      hanoiCode(numberOfDiscs-1, start, intm, end);
+      end.unshift(start.shift());
+      hanoiCode(numberOfDiscs-1, intm, end, start);
+    }
+  }
+
+  // DO NOT remove the line below
   reset();
 }
 
@@ -50,7 +59,7 @@ function reset() {
   rodA = [];
   rodB = [];
   rodC = [];
-  
+
   numberOfDiscs = 0;
   steps = 0;
 }
